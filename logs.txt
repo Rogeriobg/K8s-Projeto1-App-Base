@@ -1,0 +1,3326 @@
+
+==> Audit <==
+|------------|---------------------|----------|-----------------------|---------|---------------------|---------------------|
+|  Command   |        Args         | Profile  |         User          | Version |     Start Time      |      End Time       |
+|------------|---------------------|----------|-----------------------|---------|---------------------|---------------------|
+| start      | --driver=virtualbox | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 01:33 -03 |                     |
+| start      | --driver=virtualbox | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:02 -03 | 24 Jun 25 02:03 -03 |
+| dashboard  |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:05 -03 |                     |
+| docker-env |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:23 -03 | 24 Jun 25 02:23 -03 |
+| docker-env | minikube docker-env | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:24 -03 | 24 Jun 25 02:24 -03 |
+| docker-env | minikube docker-env | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:31 -03 | 24 Jun 25 02:31 -03 |
+| tunnel     |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:38 -03 |                     |
+| start      |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:38 -03 |                     |
+| start      |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:39 -03 |                     |
+| start      |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:41 -03 | 24 Jun 25 02:42 -03 |
+| tunnel     |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:43 -03 |                     |
+| tunnel     |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:44 -03 |                     |
+| tunnel     |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 02:45 -03 |                     |
+| docker-env |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 03:18 -03 | 24 Jun 25 03:18 -03 |
+| docker-env | minikube docker-env | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 24 Jun 25 03:19 -03 | 24 Jun 25 03:19 -03 |
+| docker-env | minikube docker-env | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 25 Jun 25 15:47 -03 |                     |
+| docker-env | minikube docker-env | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 25 Jun 25 15:55 -03 | 25 Jun 25 15:55 -03 |
+| docker-env | minikube docker-env | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 25 Jun 25 15:57 -03 |                     |
+| start      | --driver=virtualbox | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 25 Jun 25 16:07 -03 |                     |
+| delete     |                     | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 25 Jun 25 16:12 -03 | 25 Jun 25 16:12 -03 |
+| start      | --driver=virtualbox | minikube | DESKTOP-2VC82LG\rbgor | v1.36.0 | 25 Jun 25 16:12 -03 |                     |
+|------------|---------------------|----------|-----------------------|---------|---------------------|---------------------|
+
+
+==> Last Start <==
+Log file created at: 2025/06/25 16:12:15
+Running on machine: DESKTOP-2VC82LG
+Binary: Built with gc go1.24.0 for windows/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0625 16:12:15.618380   12952 out.go:345] Setting OutFile to fd 92 ...
+I0625 16:12:15.632439   12952 out.go:397] isatty.IsTerminal(92) = true
+I0625 16:12:15.632439   12952 out.go:358] Setting ErrFile to fd 96...
+I0625 16:12:15.632965   12952 out.go:397] isatty.IsTerminal(96) = true
+I0625 16:12:15.645291   12952 out.go:352] Setting JSON to false
+I0625 16:12:15.648434   12952 start.go:130] hostinfo: {"hostname":"DESKTOP-2VC82LG","uptime":137538,"bootTime":1750741197,"procs":215,"os":"windows","platform":"Microsoft Windows 10 Home","platformFamily":"Standalone Workstation","platformVersion":"10.0.19045.4170 Build 19045.4170","kernelVersion":"10.0.19045.4170 Build 19045.4170","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"34bc56a5-f37d-46d1-9251-55f791ede7bd"}
+W0625 16:12:15.648434   12952 start.go:138] gopshost.Virtualization returned error: not implemented yet
+I0625 16:12:15.715553   12952 out.go:177] 😄  minikube v1.36.0 on Microsoft Windows 10 Home 10.0.19045.4170 Build 19045.4170
+I0625 16:12:15.716635   12952 notify.go:220] Checking for updates...
+I0625 16:12:15.717185   12952 driver.go:404] Setting default libvirt URI to qemu:///system
+I0625 16:12:15.733053   12952 virtualbox.go:136] virtual box version: 7.1.6r167084
+I0625 16:12:15.734152   12952 out.go:177] ✨  Using the virtualbox driver based on user configuration
+I0625 16:12:15.735199   12952 start.go:304] selected driver: virtualbox
+I0625 16:12:15.735199   12952 start.go:908] validating driver "virtualbox" against <nil>
+I0625 16:12:15.735199   12952 start.go:919] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:7.1.6r167084
+}
+I0625 16:12:15.735199   12952 start_flags.go:311] no existing cluster config was found, will generate one from the flags 
+I0625 16:12:15.805797   12952 start_flags.go:394] Using suggested 4000MB memory alloc based on sys=16269MB, container=0MB
+I0625 16:12:15.806872   12952 start_flags.go:958] Wait components to verify : map[apiserver:true system_pods:true]
+I0625 16:12:15.807385   12952 cni.go:84] Creating CNI manager for ""
+I0625 16:12:15.807385   12952 cni.go:158] "virtualbox" driver + "docker" container runtime found on kubernetes v1.24+, recommending bridge
+I0625 16:12:15.807385   12952 start_flags.go:320] Found "bridge CNI" CNI - setting NetworkPlugin=cni
+I0625 16:12:15.807385   12952 start.go:347] cluster config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO: KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.47@sha256:6ed579c9292b4370177b7ef3c42cc4b4a6dcd0735a1814916cbc22c8bf38412b Memory:4000 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.33.1 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\rbgor:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s}
+I0625 16:12:15.807896   12952 iso.go:125] acquiring lock: {Name:mk959fb97d6c2db8a6d3309e3011d73d82b41545 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0625 16:12:15.808936   12952 out.go:177] 👍  Starting "minikube" primary control-plane node in "minikube" cluster
+I0625 16:12:15.809460   12952 preload.go:131] Checking if preload exists for k8s version v1.33.1 and runtime docker
+I0625 16:12:15.809460   12952 preload.go:146] Found local preload: C:\Users\rbgor\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4
+I0625 16:12:15.809460   12952 cache.go:56] Caching tarball of preloaded images
+I0625 16:12:15.809984   12952 preload.go:172] Found C:\Users\rbgor\.minikube\cache\preloaded-tarball\preloaded-images-k8s-v18-v1.33.1-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0625 16:12:15.809984   12952 cache.go:59] Finished verifying existence of preloaded tar for v1.33.1 on docker
+I0625 16:12:15.810512   12952 profile.go:143] Saving config to C:\Users\rbgor\.minikube\profiles\minikube\config.json ...
+I0625 16:12:15.810512   12952 lock.go:35] WriteFile acquiring C:\Users\rbgor\.minikube\profiles\minikube\config.json: {Name:mk01b63417db38965a436bbc33bc67e4b98222d2 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0625 16:12:15.811544   12952 start.go:360] acquireMachinesLock for minikube: {Name:mkdaa3d6402f04ae92d85c2610f3b49478450ccd Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0625 16:12:15.811544   12952 start.go:364] duration metric: took 0s to acquireMachinesLock for "minikube"
+I0625 16:12:15.811544   12952 start.go:93] Provisioning new machine with config: &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.36.0-amd64.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.47@sha256:6ed579c9292b4370177b7ef3c42cc4b4a6dcd0735a1814916cbc22c8bf38412b Memory:4000 CPUs:2 DiskSize:20000 Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 APIServerPort:8443 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.33.1 ClusterName:minikube Namespace:default APIServerHAVIP: APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin:cni FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: RegistryAliases: ExtraOptions:[] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI:} Nodes:[{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[] CustomAddonImages:map[] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:true system_pods:true] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: Subnet: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:C:\Users\rbgor:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false DisableMetrics:false CustomQemuFirmwarePath: SocketVMnetClientPath: SocketVMnetPath: StaticIP: SSHAuthSock: SSHAgentPID:0 GPUs: AutoPauseInterval:1m0s} &{Name: IP: Port:8443 KubernetesVersion:v1.33.1 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0625 16:12:15.811544   12952 start.go:125] createHost starting for "" (driver="virtualbox")
+I0625 16:12:15.813120   12952 out.go:235] 🔥  Creating virtualbox VM (CPUs=2, Memory=4000MB, Disk=20000MB) ...
+I0625 16:12:15.813634   12952 start.go:159] libmachine.API.Create for "minikube" (driver="virtualbox")
+I0625 16:12:15.813634   12952 client.go:168] LocalClient.Create starting
+I0625 16:12:15.814147   12952 main.go:141] libmachine: Reading certificate data from C:\Users\rbgor\.minikube\certs\ca.pem
+I0625 16:12:15.814661   12952 main.go:141] libmachine: Decoding PEM data...
+I0625 16:12:15.814661   12952 main.go:141] libmachine: Parsing certificate...
+I0625 16:12:15.815704   12952 main.go:141] libmachine: Reading certificate data from C:\Users\rbgor\.minikube\certs\cert.pem
+I0625 16:12:15.815704   12952 main.go:141] libmachine: Decoding PEM data...
+I0625 16:12:15.815704   12952 main.go:141] libmachine: Parsing certificate...
+I0625 16:12:15.815704   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe --version
+I0625 16:12:15.831063   12952 main.go:141] libmachine: STDOUT:
+{
+7.1.6r167084
+}
+I0625 16:12:15.831063   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:15.867800   12952 main.go:141] libmachine: Hyper-V is not installed.
+%!(EXTRA *exec.Error=exec: "vmms.exe": executable file not found in %PATH%)
+I0625 16:12:15.867800   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0625 16:12:16.338584   12952 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            299b5151-eea7-430a-a152-d9a8e3ee38bb
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::a1d0:a0b3:e2a0:f74e
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:30
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            8156ce89-2544-4850-8a43-14e0ac368e17
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::b6aa:4f17:7bdd:9f
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:11
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0625 16:12:16.338584   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:16.339644   12952 main.go:141] libmachine: Downloading C:\Users\rbgor\.minikube\cache\boot2docker.iso from file://C:/Users/rbgor/.minikube/cache/iso/amd64/minikube-v1.36.0-amd64.iso...
+I0625 16:12:20.365938   12952 main.go:141] libmachine: Creating VirtualBox VM...
+I0625 16:12:20.365938   12952 main.go:141] libmachine: Creating SSH key...
+I0625 16:12:20.586068   12952 main.go:141] libmachine: Creating disk image...
+I0625 16:12:20.586068   12952 main.go:141] libmachine: Creating 20000 MB hard disk image...
+I0625 16:12:20.586068   12952 main.go:141] libmachine: Writing magic tar header
+I0625 16:12:20.587073   12952 main.go:141] libmachine: Writing SSH key tar header
+I0625 16:12:20.594877   12952 main.go:141] libmachine: Calling inner createDiskImage
+I0625 16:12:20.594877   12952 main.go:141] libmachine: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe convertfromraw stdin C:\Users\rbgor\.minikube\machines\minikube\disk.vmdk 20971520000 --format VMDK
+I0625 16:12:20.594877   12952 main.go:141] libmachine: Starting command
+I0625 16:12:20.597813   12952 main.go:141] libmachine: Copying to stdin
+I0625 16:12:20.618718   12952 main.go:141] libmachine: Filling zeroes
+I0625 16:12:31.196789   12952 main.go:141] libmachine: Closing STDIN
+I0625 16:12:31.196789   12952 main.go:141] libmachine: Waiting on cmd
+I0625 16:12:31.206276   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe createvm --basefolder C:\Users\rbgor\.minikube\machines\minikube --name minikube --register
+I0625 16:12:31.647904   12952 main.go:141] libmachine: STDOUT:
+{
+Virtual machine 'minikube' is created and registered.
+UUID: 83aec646-4b97-47b2-b481-ffac0bb5c01c
+Settings file: 'C:\Users\rbgor\.minikube\machines\minikube\minikube\minikube.vbox'
+}
+I0625 16:12:31.647904   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.647904   12952 main.go:141] libmachine: VM CPUS: 2
+I0625 16:12:31.647904   12952 main.go:141] libmachine: VM Memory: 4000
+I0625 16:12:31.647904   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --firmware bios --bioslogofadein off --bioslogofadeout off --bioslogodisplaytime 0 --biosbootmenu disabled --ostype Linux26_64 --cpus 2 --memory 4000 --acpi on --ioapic on --rtcuseutc on --natdnshostresolver1 on --natdnsproxy1 off --cpuhotplug off --pae on --hpet on --hwvirtex on --nestedpaging on --largepages on --vtxvpid on --accelerate3d off --boot1 dvd --natlocalhostreachable1 on
+I0625 16:12:31.688743   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.688743   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.688743   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --nic1 nat --nictype1 virtio --cableconnected1 on
+I0625 16:12:31.724574   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.724574   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.724574   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe storagectl minikube --name SATA --add sata --hostiocache on
+I0625 16:12:31.757579   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.757579   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.757579   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe storageattach minikube --storagectl SATA --port 0 --device 0 --type dvddrive --medium C:\Users\rbgor\.minikube\machines\minikube\boot2docker.iso
+I0625 16:12:31.802820   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.802820   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.802820   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe storageattach minikube --storagectl SATA --port 1 --device 0 --type hdd --medium C:\Users\rbgor\.minikube\machines\minikube\disk.vmdk
+I0625 16:12:31.843823   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.843823   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.843823   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe guestproperty set minikube /VirtualBox/GuestAdd/SharedFolders/MountPrefix /
+I0625 16:12:31.877508   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.877508   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.877508   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe guestproperty set minikube /VirtualBox/GuestAdd/SharedFolders/MountDir /
+I0625 16:12:31.909979   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.909979   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.909979   12952 main.go:141] libmachine: setting up shareDir '\\?\c:\Users' -> 'c/Users'
+I0625 16:12:31.909979   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe sharedfolder add minikube --name c/Users --hostpath \\?\c:\Users --automount
+I0625 16:12:31.942539   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.942539   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.942539   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe setextradata minikube VBoxInternal2/SharedFoldersEnableSymlinksCreate/c/Users 1
+I0625 16:12:31.976854   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:31.976854   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:31.976854   12952 main.go:141] libmachine: Starting the VM...
+I0625 16:12:31.976854   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:12:32.032270   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="poweroff"
+VMStateChangeTime="2025-06-25T19:12:31.634000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+nic2="none"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+}
+I0625 16:12:32.032270   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.032270   12952 main.go:141] libmachine: Check network to re-create if needed...
+I0625 16:12:32.032270   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0625 16:12:32.099309   12952 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            299b5151-eea7-430a-a152-d9a8e3ee38bb
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::a1d0:a0b3:e2a0:f74e
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:30
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            8156ce89-2544-4850-8a43-14e0ac368e17
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::b6aa:4f17:7bdd:9f
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:11
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0625 16:12:32.099309   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.119051   12952 main.go:141] libmachine: Searching for hostonly interface for IPv4: 192.168.59.1 and Mask: ffffff00
+I0625 16:12:32.119051   12952 main.go:141] libmachine: Found: VirtualBox Host-Only Ethernet Adapter #2
+I0625 16:12:32.119051   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0625 16:12:32.150228   12952 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+Dhcpd IP:       192.168.59.20
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0625 16:12:32.150228   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.150228   12952 main.go:141] libmachine: Removing orphan DHCP servers...
+I0625 16:12:32.150228   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0625 16:12:32.217511   12952 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            299b5151-eea7-430a-a152-d9a8e3ee38bb
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::a1d0:a0b3:e2a0:f74e
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:30
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            8156ce89-2544-4850-8a43-14e0ac368e17
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::b6aa:4f17:7bdd:9f
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:11
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0625 16:12:32.217511   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.217511   12952 main.go:141] libmachine: Adding/Modifying DHCP server "192.168.59.6" with address range "192.168.59.100" - "192.168.59.254"...
+I0625 16:12:32.217511   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list dhcpservers
+I0625 16:12:32.247462   12952 main.go:141] libmachine: STDOUT:
+{
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+Dhcpd IP:       192.168.56.100
+LowerIPAddress: 192.168.56.101
+UpperIPAddress: 192.168.56.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+
+NetworkName:    HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+Dhcpd IP:       192.168.59.20
+LowerIPAddress: 192.168.59.100
+UpperIPAddress: 192.168.59.254
+NetworkMask:    255.255.255.0
+Enabled:        Yes
+Global Configuration:
+    minLeaseTime:     default
+    defaultLeaseTime: default
+    maxLeaseTime:     default
+    Forced options:   None
+    Suppressed opts.: None
+        1/legacy: 255.255.255.0
+Groups:               None
+Individual Configs:   None
+}
+I0625 16:12:32.247462   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.247462   12952 main.go:141] libmachine: Windows might ask for the permission to configure a dhcp server. Sometimes, such confirmation window is minimized in the taskbar.
+I0625 16:12:32.247462   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe dhcpserver modify --netname HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2 --ip 192.168.59.6 --netmask 255.255.255.0 --lowerip 192.168.59.100 --upperip 192.168.59.254 --enable
+I0625 16:12:32.285728   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:32.285728   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.285728   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --nic2 hostonly --nictype2 virtio --nicpromisc2 deny --hostonlyadapter2 VirtualBox Host-Only Ethernet Adapter #2 --cableconnected2 on
+I0625 16:12:32.356205   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:32.356205   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.356205   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --natpf1 delete ssh
+I0625 16:12:32.392454   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:32.392530   12952 main.go:141] libmachine: STDERR:
+{
+VBoxManage.exe: error: Code E_INVALIDARG (0x80070057) (extended info not available)
+VBoxManage.exe: error: Context: "RemoveRedirect(Bstr(ValueUnion.psz).raw())" at line 2209 of file VBoxManageModifyVM.cpp
+}
+I0625 16:12:32.392530   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe modifyvm minikube --natpf1 ssh,tcp,127.0.0.1,59659,,22
+I0625 16:12:32.426774   12952 main.go:141] libmachine: STDOUT:
+{
+}
+I0625 16:12:32.426774   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:32.426774   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe startvm minikube --type headless
+I0625 16:12:37.021175   12952 main.go:141] libmachine: STDOUT:
+{
+Waiting for VM "minikube" to power on...
+VM "minikube" has been successfully started.
+}
+I0625 16:12:37.021175   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:12:37.021175   12952 main.go:141] libmachine: Checking vm logs: C:\Users\rbgor\.minikube\machines\minikube\minikube\Logs\VBox.log
+I0625 16:12:37.032252   12952 main.go:141] libmachine: Waiting for an IP...
+I0625 16:12:37.032252   12952 main.go:141] libmachine: Getting to WaitForSSH function...
+I0625 16:12:37.040085   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:12:37.051350   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:12:37.051350   12952 main.go:141] libmachine: About to run SSH command:
+exit 0
+I0625 16:13:07.795377   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0625 16:13:07.795377   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:07.852949   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:07.852949   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:07.852949   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:07.907712   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:07.907712   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:07.907712   12952 main.go:141] libmachine: Host-only MAC: 080027fff870
+
+I0625 16:13:07.915145   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:07.915708   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:07.915708   12952 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0625 16:13:08.072189   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0625 16:13:08.072189   12952 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86398sec preferred_lft 86398sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 598sec preferred_lft 598sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0625 16:13:08.072189   12952 main.go:141] libmachine: IP is 192.168.59.101
+I0625 16:13:08.072189   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:08.133093   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:08.133093   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:08.133093   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:08.188905   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:08.188905   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:08.188905   12952 main.go:141] libmachine: Host-only MAC: 080027fff870
+
+I0625 16:13:08.196219   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:08.196741   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:08.196741   12952 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0625 16:13:08.352367   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86397sec preferred_lft 86397sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 597sec preferred_lft 597sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0625 16:13:08.352872   12952 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86397sec preferred_lft 86397sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 597sec preferred_lft 597sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0625 16:13:08.352922   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe list hostonlyifs
+I0625 16:13:08.416176   12952 main.go:141] libmachine: STDOUT:
+{
+Name:            VirtualBox Host-Only Ethernet Adapter #2
+GUID:            299b5151-eea7-430a-a152-d9a8e3ee38bb
+DHCP:            Disabled
+IPAddress:       192.168.59.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::a1d0:a0b3:e2a0:f74e
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:30
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter #2
+
+Name:            VirtualBox Host-Only Ethernet Adapter
+GUID:            8156ce89-2544-4850-8a43-14e0ac368e17
+DHCP:            Disabled
+IPAddress:       192.168.56.1
+NetworkMask:     255.255.255.0
+IPV6Address:     fe80::b6aa:4f17:7bdd:9f
+IPV6NetworkMaskPrefixLength: 64
+HardwareAddress: 0a:00:27:00:00:11
+MediumType:      Ethernet
+Wireless:        No
+Status:          Up
+VBoxNetworkName: HostInterfaceNetworking-VirtualBox Host-Only Ethernet Adapter
+
+}
+I0625 16:13:08.416176   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:08.436982   12952 main.go:141] libmachine: Found: VirtualBox Host-Only Ethernet Adapter #2
+I0625 16:13:08.436982   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:08.491382   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:08.491382   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:08.491382   12952 machine.go:93] provisionDockerMachine start ...
+I0625 16:13:08.498620   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:08.499142   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:08.499142   12952 main.go:141] libmachine: About to run SSH command:
+hostname
+I0625 16:13:08.652636   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0625 16:13:08.652636   12952 buildroot.go:166] provisioning hostname "minikube"
+I0625 16:13:08.662413   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:08.663479   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:08.663479   12952 main.go:141] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0625 16:13:08.867274   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0625 16:13:08.874827   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:08.875345   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:08.875345   12952 main.go:141] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0625 16:13:09.008533   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 
+I0625 16:13:09.009070   12952 buildroot.go:172] set auth options {CertDir:C:\Users\rbgor\.minikube CaCertPath:C:\Users\rbgor\.minikube\certs\ca.pem CaPrivateKeyPath:C:\Users\rbgor\.minikube\certs\ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:C:\Users\rbgor\.minikube\machines\server.pem ServerKeyPath:C:\Users\rbgor\.minikube\machines\server-key.pem ClientKeyPath:C:\Users\rbgor\.minikube\certs\key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:C:\Users\rbgor\.minikube\certs\cert.pem ServerCertSANs:[] StorePath:C:\Users\rbgor\.minikube}
+I0625 16:13:09.009070   12952 buildroot.go:174] setting up certificates
+I0625 16:13:09.009070   12952 provision.go:84] configureAuth start
+I0625 16:13:09.009070   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:09.067001   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:09.067001   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:09.067001   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:09.121725   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:09.121725   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:09.121725   12952 main.go:141] libmachine: Host-only MAC: 080027fff870
+
+I0625 16:13:09.129255   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:09.129795   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:09.129795   12952 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0625 16:13:09.286640   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86396sec preferred_lft 86396sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 596sec preferred_lft 596sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+I0625 16:13:09.286640   12952 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86396sec preferred_lft 86396sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 596sec preferred_lft 596sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+
+END SSH
+
+I0625 16:13:09.286640   12952 provision.go:143] copyHostCerts
+I0625 16:13:09.287176   12952 exec_runner.go:144] found C:\Users\rbgor\.minikube/cert.pem, removing ...
+I0625 16:13:09.287176   12952 exec_runner.go:203] rm: C:\Users\rbgor\.minikube\cert.pem
+I0625 16:13:09.287696   12952 exec_runner.go:151] cp: C:\Users\rbgor\.minikube\certs\cert.pem --> C:\Users\rbgor\.minikube/cert.pem (1119 bytes)
+I0625 16:13:09.288217   12952 exec_runner.go:144] found C:\Users\rbgor\.minikube/key.pem, removing ...
+I0625 16:13:09.288217   12952 exec_runner.go:203] rm: C:\Users\rbgor\.minikube\key.pem
+I0625 16:13:09.288740   12952 exec_runner.go:151] cp: C:\Users\rbgor\.minikube\certs\key.pem --> C:\Users\rbgor\.minikube/key.pem (1679 bytes)
+I0625 16:13:09.289260   12952 exec_runner.go:144] found C:\Users\rbgor\.minikube/ca.pem, removing ...
+I0625 16:13:09.289260   12952 exec_runner.go:203] rm: C:\Users\rbgor\.minikube\ca.pem
+I0625 16:13:09.289260   12952 exec_runner.go:151] cp: C:\Users\rbgor\.minikube\certs\ca.pem --> C:\Users\rbgor\.minikube/ca.pem (1074 bytes)
+I0625 16:13:09.289779   12952 provision.go:117] generating server cert: C:\Users\rbgor\.minikube\machines\server.pem ca-key=C:\Users\rbgor\.minikube\certs\ca.pem private-key=C:\Users\rbgor\.minikube\certs\ca-key.pem org=rbgor.minikube san=[127.0.0.1 192.168.59.101 localhost minikube]
+I0625 16:13:09.616748   12952 provision.go:177] copyRemoteCerts
+I0625 16:13:09.656259   12952 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0625 16:13:09.656259   12952 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:59659 SSHKeyPath:C:\Users\rbgor\.minikube\machines\minikube\id_rsa Username:docker}
+I0625 16:13:09.747208   12952 ssh_runner.go:362] scp C:\Users\rbgor\.minikube\certs\ca.pem --> /etc/docker/ca.pem (1074 bytes)
+I0625 16:13:09.798437   12952 ssh_runner.go:362] scp C:\Users\rbgor\.minikube\machines\server.pem --> /etc/docker/server.pem (1176 bytes)
+I0625 16:13:09.844988   12952 ssh_runner.go:362] scp C:\Users\rbgor\.minikube\machines\server-key.pem --> /etc/docker/server-key.pem (1679 bytes)
+I0625 16:13:09.897575   12952 provision.go:87] duration metric: took 888.5056ms to configureAuth
+I0625 16:13:09.897575   12952 buildroot.go:189] setting minikube options for container-runtime
+I0625 16:13:09.898145   12952 config.go:182] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.33.1
+I0625 16:13:09.904878   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:09.905413   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:09.905413   12952 main.go:141] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0625 16:13:10.053152   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0625 16:13:10.053152   12952 buildroot.go:70] root file system type: tmpfs
+I0625 16:13:10.053152   12952 provision.go:314] Updating docker unit: /lib/systemd/system/docker.service ...
+I0625 16:13:10.060570   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:10.061090   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:10.061090   12952 main.go:141] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %s "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0625 16:13:10.242150   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0625 16:13:10.250130   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:10.250130   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:10.250130   12952 main.go:141] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0625 16:13:12.299602   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: diff: can't stat '/lib/systemd/system/docker.service': No such file or directory
+Created symlink '/etc/systemd/system/multi-user.target.wants/docker.service' → '/usr/lib/systemd/system/docker.service'.
+
+I0625 16:13:12.299602   12952 machine.go:96] duration metric: took 3.8082207s to provisionDockerMachine
+I0625 16:13:12.299602   12952 client.go:171] duration metric: took 56.485968s to LocalClient.Create
+I0625 16:13:12.299602   12952 start.go:167] duration metric: took 56.485968s to libmachine.API.Create "minikube"
+I0625 16:13:12.299602   12952 start.go:293] postStartSetup for "minikube" (driver="virtualbox")
+I0625 16:13:12.299602   12952 start.go:322] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0625 16:13:12.332272   12952 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0625 16:13:12.332272   12952 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:59659 SSHKeyPath:C:\Users\rbgor\.minikube\machines\minikube\id_rsa Username:docker}
+I0625 16:13:12.465822   12952 ssh_runner.go:195] Run: cat /etc/os-release
+I0625 16:13:12.471680   12952 info.go:137] Remote host: Buildroot 2025.02
+I0625 16:13:12.472656   12952 filesync.go:126] Scanning C:\Users\rbgor\.minikube\addons for local assets ...
+I0625 16:13:12.472656   12952 filesync.go:126] Scanning C:\Users\rbgor\.minikube\files for local assets ...
+I0625 16:13:12.472656   12952 start.go:296] duration metric: took 173.0534ms for postStartSetup
+I0625 16:13:12.473648   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:12.529236   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:12.529236   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:12.529236   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:12.585477   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:12.585477   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:12.585477   12952 main.go:141] libmachine: Host-only MAC: 080027fff870
+
+I0625 16:13:12.592586   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:12.593128   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:12.593128   12952 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0625 16:13:12.742673   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86393sec preferred_lft 86393sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 593sec preferred_lft 593sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether d2:42:b5:53:f0:73 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0625 16:13:12.742673   12952 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86393sec preferred_lft 86393sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 593sec preferred_lft 593sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether d2:42:b5:53:f0:73 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0625 16:13:12.743208   12952 profile.go:143] Saving config to C:\Users\rbgor\.minikube\profiles\minikube\config.json ...
+I0625 16:13:12.745361   12952 start.go:128] duration metric: took 56.9338171s to createHost
+I0625 16:13:12.753417   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:12.753990   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:12.753990   12952 main.go:141] libmachine: About to run SSH command:
+date +%s.%N
+I0625 16:13:12.893609   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 1750878798.823940171
+
+I0625 16:13:12.893609   12952 fix.go:216] guest clock: 1750878798.823940171
+I0625 16:13:12.893609   12952 fix.go:229] Guest: 2025-06-25 16:13:18.823940171 -0300 -03 Remote: 2025-06-25 16:13:12.7453615 -0300 -03 m=+57.191785701 (delta=6.078578671s)
+I0625 16:13:12.900634   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:12.901166   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:12.901166   12952 main.go:141] libmachine: About to run SSH command:
+sudo date -s @1750878792
+I0625 16:13:13.065044   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: Wed Jun 25 19:13:12 UTC 2025
+
+I0625 16:13:13.065044   12952 fix.go:236] clock set: Wed Jun 25 19:13:12 UTC 2025
+ (err=<nil>)
+I0625 16:13:13.065044   12952 start.go:83] releasing machines lock for "minikube", held for 57.2535004s
+I0625 16:13:13.065044   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:13.125293   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:13.125293   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:13.125293   12952 main.go:141] libmachine: COMMAND: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe showvminfo minikube --machinereadable
+I0625 16:13:13.181284   12952 main.go:141] libmachine: STDOUT:
+{
+name="minikube"
+encryption="disabled"
+groups="/"
+platformArchitecture="x86"
+ostype="Linux 2.6 / 3.x / 4.x / 5.x (64-bit)"
+UUID="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+CfgFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.vbox"
+SnapFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Snapshots"
+LogFldr="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\Logs"
+hardwareuuid="83aec646-4b97-47b2-b481-ffac0bb5c01c"
+memory=4000
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+hpet="on"
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+virtvmsavevmload="on"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+NvramFile="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube.nvram"
+rtcuseutc="on"
+iommu="none"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2025-06-25T19:12:37.015000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\boot2docker.iso"
+"SATA-ImageUUID-0-0"="5cb8c13f-e1b4-44f2-b6ba-8140d77cea15"
+"SATA-tempeject-0-0"="off"
+"SATA-IsEjected-0-0"="off"
+"SATA-hot-pluggable-0-0"="off"
+"SATA-nonrotational-0-0"="off"
+"SATA-discard-0-0"="off"
+"SATA-1-0"="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\disk.vmdk"
+"SATA-ImageUUID-1-0"="0b7bf7bc-c359-4d77-aa5d-14f23aa13a4e"
+"SATA-hot-pluggable-1-0"="off"
+"SATA-nonrotational-1-0"="off"
+"SATA-discard-1-0"="off"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="0800274F18E4"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,59659,,22"
+hostonlyadapter2="VirtualBox Host-Only Ethernet Adapter #2"
+macaddress2="080027FFF870"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="default"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+clipboard_file_transfers="off"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="c/Users"
+SharedFolderPathMachineMapping1="\\\\?\\c:\\Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+recording_started="off"
+recording_enabled="off"
+recording_screens=1
+ rec_screen0
+rec_screen_enabled="on"
+rec_screen_id=0
+rec_screen_video_enabled="on"
+rec_screen_audio_enabled="off"
+rec_screen_dest="File"
+rec_screen_dest_filename="C:\\Users\\rbgor\\.minikube\\machines\\minikube\\minikube\\minikube-screen0.webm"
+rec_screen_opts="vc_enabled=true,ac_enabled=false,ac_profile=med"
+rec_screen_video_res_xy="1024x768"
+rec_screen_video_rate_kbps=512
+rec_screen_video_fps=25
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=1
+GuestAdditionsVersion="6.0.0 r127566"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1750878785370
+GuestAdditionsFacility_Seamless Mode=0,1750878785359
+GuestAdditionsFacility_Graphics Mode=0,1750878785359
+}
+I0625 16:13:13.181284   12952 main.go:141] libmachine: STDERR:
+{
+}
+I0625 16:13:13.181284   12952 main.go:141] libmachine: Host-only MAC: 080027fff870
+
+I0625 16:13:13.188297   12952 main.go:141] libmachine: Using SSH client type: native
+I0625 16:13:13.188297   12952 main.go:141] libmachine: &{{{<nil> 0 [] [] []} docker [0xefa9e0] 0xefd520 <nil>  [] 0s} 127.0.0.1 59659 <nil> <nil>}
+I0625 16:13:13.188297   12952 main.go:141] libmachine: About to run SSH command:
+ip addr show
+I0625 16:13:13.330871   12952 main.go:141] libmachine: SSH cmd err, output: <nil>: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86392sec preferred_lft 86392sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 592sec preferred_lft 592sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether d2:42:b5:53:f0:73 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+I0625 16:13:13.330871   12952 main.go:141] libmachine: SSH returned: 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:4f:18:e4 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 metric 1024 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86392sec preferred_lft 86392sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:ff:f8:70 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.101/24 metric 1024 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 592sec preferred_lft 592sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether d2:42:b5:53:f0:73 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+
+END SSH
+
+I0625 16:13:13.338481   12952 ssh_runner.go:195] Run: curl.exe -sS -m 2 https://registry.k8s.io/
+I0625 16:13:13.338983   12952 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:59659 SSHKeyPath:C:\Users\rbgor\.minikube\machines\minikube\id_rsa Username:docker}
+I0625 16:13:13.375782   12952 ssh_runner.go:195] Run: cat /version.json
+I0625 16:13:13.375782   12952 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:59659 SSHKeyPath:C:\Users\rbgor\.minikube\machines\minikube\id_rsa Username:docker}
+W0625 16:13:13.429822   12952 start.go:867] [curl.exe -sS -m 2 https://registry.k8s.io/] failed: curl.exe -sS -m 2 https://registry.k8s.io/: Process exited with status 127
+stdout:
+
+stderr:
+bash: line 1: curl.exe: command not found
+W0625 16:13:13.454940   12952 out.go:270] ❗  Image was not built for the current minikube version. To resolve this you can delete and recreate your minikube cluster using the latest images. Expected minikube version: v1.35.0 -> Actual minikube version: v1.36.0
+I0625 16:13:13.492028   12952 ssh_runner.go:195] Run: systemctl --version
+I0625 16:13:13.534052   12952 ssh_runner.go:195] Run: sh -c "stat /etc/cni/net.d/*loopback.conf*"
+W0625 16:13:13.542380   12952 cni.go:209] loopback cni configuration skipped: "/etc/cni/net.d/*loopback.conf*" not found
+I0625 16:13:13.573949   12952 ssh_runner.go:195] Run: sudo find /etc/cni/net.d -maxdepth 1 -type f ( ( -name *bridge* -or -name *podman* ) -and -not -name *.mk_disabled ) -printf "%p, " -exec sh -c "sudo mv {} {}.mk_disabled" ;
+I0625 16:13:13.612054   12952 cni.go:262] disabled [/etc/cni/net.d/87-podman-bridge.conflist] bridge cni config(s)
+I0625 16:13:13.612054   12952 start.go:495] detecting cgroup driver to use...
+I0625 16:13:13.612757   12952 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %s "runtime-endpoint: unix:///run/containerd/containerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0625 16:13:13.680498   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)sandbox_image = .*$|\1sandbox_image = "registry.k8s.io/pause:3.10"|' /etc/containerd/config.toml"
+W0625 16:13:13.725947   12952 out.go:270] ❗  Failing to connect to https://registry.k8s.io/ from inside the minikube VM
+W0625 16:13:13.725947   12952 out.go:270] 💡  To pull new external images, you may need to configure a proxy: https://minikube.sigs.k8s.io/docs/reference/networking/proxy/
+I0625 16:13:13.733437   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)restrict_oom_score_adj = .*$|\1restrict_oom_score_adj = false|' /etc/containerd/config.toml"
+I0625 16:13:13.756220   12952 containerd.go:146] configuring containerd to use "cgroupfs" as cgroup driver...
+I0625 16:13:13.789607   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)SystemdCgroup = .*$|\1SystemdCgroup = false|g' /etc/containerd/config.toml"
+I0625 16:13:13.840682   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runtime.v1.linux"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0625 16:13:13.894704   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i '/systemd_cgroup/d' /etc/containerd/config.toml"
+I0625 16:13:13.944612   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i 's|"io.containerd.runc.v1"|"io.containerd.runc.v2"|g' /etc/containerd/config.toml"
+I0625 16:13:13.997731   12952 ssh_runner.go:195] Run: sh -c "sudo rm -rf /etc/cni/net.mk"
+I0625 16:13:14.047539   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)conf_dir = .*$|\1conf_dir = "/etc/cni/net.d"|g' /etc/containerd/config.toml"
+I0625 16:13:14.109033   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i '/^ *enable_unprivileged_ports = .*/d' /etc/containerd/config.toml"
+I0625 16:13:14.161943   12952 ssh_runner.go:195] Run: sh -c "sudo sed -i -r 's|^( *)\[plugins."io.containerd.grpc.v1.cri"\]|&\n\1  enable_unprivileged_ports = true|' /etc/containerd/config.toml"
+I0625 16:13:14.210895   12952 ssh_runner.go:195] Run: sudo sysctl net.bridge.bridge-nf-call-iptables
+I0625 16:13:14.229477   12952 crio.go:166] couldn't verify netfilter by "sudo sysctl net.bridge.bridge-nf-call-iptables" which might be okay. error: sudo sysctl net.bridge.bridge-nf-call-iptables: Process exited with status 1
+stdout:
+
+stderr:
+sysctl: cannot stat /proc/sys/net/bridge/bridge-nf-call-iptables: No such file or directory
+I0625 16:13:14.260907   12952 ssh_runner.go:195] Run: sudo modprobe br_netfilter
+I0625 16:13:14.312865   12952 ssh_runner.go:195] Run: sudo sh -c "echo 1 > /proc/sys/net/ipv4/ip_forward"
+I0625 16:13:14.365410   12952 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0625 16:13:14.888271   12952 ssh_runner.go:195] Run: sudo systemctl restart containerd
+I0625 16:13:14.961106   12952 start.go:495] detecting cgroup driver to use...
+I0625 16:13:14.993723   12952 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0625 16:13:15.061865   12952 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0625 16:13:15.125448   12952 ssh_runner.go:195] Run: sudo systemctl stop -f containerd
+I0625 16:13:15.223146   12952 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0625 16:13:15.288163   12952 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0625 16:13:15.351413   12952 ssh_runner.go:195] Run: sudo systemctl stop -f crio
+I0625 16:13:15.442093   12952 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0625 16:13:15.465460   12952 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %s "runtime-endpoint: unix:///var/run/cri-dockerd.sock
+" | sudo tee /etc/crictl.yaml"
+I0625 16:13:15.530747   12952 ssh_runner.go:195] Run: which cri-dockerd
+I0625 16:13:15.571323   12952 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/cri-docker.service.d
+I0625 16:13:15.589607   12952 ssh_runner.go:362] scp memory --> /etc/systemd/system/cri-docker.service.d/10-cni.conf (190 bytes)
+I0625 16:13:15.652965   12952 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0625 16:13:16.187814   12952 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0625 16:13:16.698601   12952 docker.go:587] configuring docker to use "cgroupfs" as cgroup driver...
+I0625 16:13:16.698601   12952 ssh_runner.go:362] scp memory --> /etc/docker/daemon.json (130 bytes)
+I0625 16:13:16.771718   12952 ssh_runner.go:195] Run: sudo systemctl reset-failed docker
+I0625 16:13:16.832242   12952 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0625 16:13:17.391005   12952 ssh_runner.go:195] Run: sudo systemctl restart docker
+I0625 16:13:18.566133   12952 ssh_runner.go:235] Completed: sudo systemctl restart docker: (1.1751285s)
+I0625 16:13:18.597092   12952 ssh_runner.go:195] Run: sudo journalctl --no-pager -u docker
+I0625 16:13:18.627832   12952 out.go:201] 
+W0625 16:13:18.628904   12952 out.go:270] ❌  Exiting due to RUNTIME_ENABLE: Failed to enable container runtime: sudo systemctl restart docker: Process exited with status 1
+stdout:
+
+stderr:
+Job for docker.service failed because the control process exited with error code.
+See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.
+
+sudo journalctl --no-pager -u docker:
+-- stdout --
+Jun 25 19:13:17 minikube systemd[1]: Starting Docker Application Container Engine...
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.608252273Z" level=info msg="Starting up"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.612296665Z" level=info msg="containerd not running, starting managed containerd"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.613471287Z" level=info msg="started new containerd process" address=/var/run/docker/containerd/containerd.sock module=libcontainerd pid=766
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.656902475Z" level=info msg="starting containerd" revision=57f17b0a6295a39009d861b89e3b3b87b005ca27 version=v1.7.23
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.752105149Z" level=info msg="loading plugin \"io.containerd.event.v1.exchange\"..." type=io.containerd.event.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.752208594Z" level=info msg="loading plugin \"io.containerd.internal.v1.opt\"..." type=io.containerd.internal.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.752320279Z" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.warning.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.752357785Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.752494695Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scratch file generator: skip plugin" type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.752526882Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.753042603Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.btrfs (ext4) must be a btrfs filesystem to be used with the btrfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.753152801Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.753190106Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmapper not configured: skip plugin" type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.753220180Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.native\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.753348470Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.overlayfs\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.753682519Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.aufs\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.756668775Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not supported (modprobe aufs failed: exit status 1 \"modprobe: FATAL: Module aufs not found in directory /lib/modules/5.10.207\\n\"): skip plugin" type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.756748651Z" level=info msg="loading plugin \"io.containerd.snapshotter.v1.zfs\"..." type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.757232116Z" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/lib/docker/containerd/daemon/io.containerd.snapshotter.v1.zfs must be a zfs filesystem to be used with the zfs snapshotter: skip plugin" type=io.containerd.snapshotter.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.757291817Z" level=info msg="loading plugin \"io.containerd.content.v1.content\"..." type=io.containerd.content.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.757498393Z" level=info msg="loading plugin \"io.containerd.metadata.v1.bolt\"..." type=io.containerd.metadata.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.757607972Z" level=info msg="metadata content store policy set" policy=shared
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.763411206Z" level=info msg="loading plugin \"io.containerd.gc.v1.scheduler\"..." type=io.containerd.gc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.763558816Z" level=info msg="loading plugin \"io.containerd.differ.v1.walking\"..." type=io.containerd.differ.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.763603812Z" level=info msg="loading plugin \"io.containerd.lease.v1.manager\"..." type=io.containerd.lease.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.763643380Z" level=info msg="loading plugin \"io.containerd.streaming.v1.manager\"..." type=io.containerd.streaming.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.763679340Z" level=info msg="loading plugin \"io.containerd.runtime.v1.linux\"..." type=io.containerd.runtime.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.763858417Z" level=info msg="loading plugin \"io.containerd.monitor.v1.cgroups\"..." type=io.containerd.monitor.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764539885Z" level=info msg="loading plugin \"io.containerd.runtime.v2.task\"..." type=io.containerd.runtime.v2
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764721256Z" level=info msg="loading plugin \"io.containerd.runtime.v2.shim\"..." type=io.containerd.runtime.v2
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764780677Z" level=info msg="loading plugin \"io.containerd.sandbox.store.v1.local\"..." type=io.containerd.sandbox.store.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764818474Z" level=info msg="loading plugin \"io.containerd.sandbox.controller.v1.local\"..." type=io.containerd.sandbox.controller.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764854848Z" level=info msg="loading plugin \"io.containerd.service.v1.containers-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764911917Z" level=info msg="loading plugin \"io.containerd.service.v1.content-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.764989070Z" level=info msg="loading plugin \"io.containerd.service.v1.diff-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765040072Z" level=info msg="loading plugin \"io.containerd.service.v1.images-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765177280Z" level=info msg="loading plugin \"io.containerd.service.v1.introspection-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765259524Z" level=info msg="loading plugin \"io.containerd.service.v1.namespaces-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765341990Z" level=info msg="loading plugin \"io.containerd.service.v1.snapshots-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765415474Z" level=info msg="loading plugin \"io.containerd.service.v1.tasks-service\"..." type=io.containerd.service.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765483240Z" level=info msg="loading plugin \"io.containerd.grpc.v1.containers\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765522774Z" level=info msg="loading plugin \"io.containerd.grpc.v1.content\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765556955Z" level=info msg="loading plugin \"io.containerd.grpc.v1.diff\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765592123Z" level=info msg="loading plugin \"io.containerd.grpc.v1.events\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765625937Z" level=info msg="loading plugin \"io.containerd.grpc.v1.images\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765673469Z" level=info msg="loading plugin \"io.containerd.grpc.v1.introspection\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765714392Z" level=info msg="loading plugin \"io.containerd.grpc.v1.leases\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765750426Z" level=info msg="loading plugin \"io.containerd.grpc.v1.namespaces\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765793898Z" level=info msg="loading plugin \"io.containerd.grpc.v1.sandbox-controllers\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765936659Z" level=info msg="loading plugin \"io.containerd.grpc.v1.sandboxes\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.765976212Z" level=info msg="loading plugin \"io.containerd.grpc.v1.snapshots\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766010461Z" level=info msg="loading plugin \"io.containerd.grpc.v1.streaming\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766043978Z" level=info msg="loading plugin \"io.containerd.grpc.v1.tasks\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766086424Z" level=info msg="loading plugin \"io.containerd.transfer.v1.local\"..." type=io.containerd.transfer.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766155180Z" level=info msg="loading plugin \"io.containerd.grpc.v1.transfer\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766202774Z" level=info msg="loading plugin \"io.containerd.grpc.v1.version\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766236120Z" level=info msg="loading plugin \"io.containerd.internal.v1.restart\"..." type=io.containerd.internal.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766364598Z" level=info msg="loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." type=io.containerd.tracing.processor.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766410902Z" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip plugin: tracing endpoint not configured" type=io.containerd.tracing.processor.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766442387Z" level=info msg="loading plugin \"io.containerd.internal.v1.tracing\"..." type=io.containerd.internal.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766478479Z" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin: tracing endpoint not configured" type=io.containerd.internal.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766510305Z" level=info msg="loading plugin \"io.containerd.grpc.v1.healthcheck\"..." type=io.containerd.grpc.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766555508Z" level=info msg="loading plugin \"io.containerd.nri.v1.nri\"..." type=io.containerd.nri.v1
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.766583733Z" level=info msg="NRI interface is disabled by configuration."
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.767083335Z" level=info msg=serving... address=/var/run/docker/containerd/containerd-debug.sock
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.767183286Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock.ttrpc
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.767254769Z" level=info msg=serving... address=/var/run/docker/containerd/containerd.sock
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.767288705Z" level=info msg="containerd successfully booted in 0.112905s"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.783228251Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.805076128Z" level=info msg="Creating a containerd client" address=/var/run/docker/containerd/containerd.sock timeout=1m0s
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.819136650Z" level=info msg="[graphdriver] trying configured driver: overlay2"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.830489729Z" level=info msg="Loading containers: start."
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.032327768Z" level=warning msg="ip6tables is enabled, but cannot set up ip6tables chains" error="failed to create NAT chain DOCKER: iptables failed: ip6tables --wait -t nat -N DOCKER: ip6tables v1.8.11 (legacy): can't initialize ip6tables table `nat': Table does not exist (do you need to insmod?)\nPerhaps ip6tables or your kernel needs to be upgraded.\n (exit status 3)"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.132790816Z" level=info msg="Loading containers: done."
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.159761346Z" level=info msg="Docker daemon" commit=6430e49 containerd-snapshotter=false storage-driver=overlay2 version=28.0.4
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.160345666Z" level=info msg="Initializing buildkit"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.198471782Z" level=info msg="Completed buildkit initialization"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.224958626Z" level=info msg="Daemon has completed initialization"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.225263605Z" level=info msg="API listen on /var/run/docker.sock"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.225470013Z" level=info msg="API listen on [::]:2376"
+Jun 25 19:13:18 minikube systemd[1]: Started Docker Application Container Engine.
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.357140531Z" level=info msg="Processing signal 'terminated'"
+Jun 25 19:13:16 minikube systemd[1]: Stopping Docker Application Container Engine...
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.359706442Z" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.361011727Z" level=info msg="Daemon shutdown complete"
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.361135563Z" level=info msg="stopping healthcheck following graceful shutdown" module=libcontainerd
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.361203747Z" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Deactivated successfully.
+Jun 25 19:13:17 minikube systemd[1]: Stopped Docker Application Container Engine.
+Jun 25 19:13:17 minikube systemd[1]: Starting Docker Application Container Engine...
+Jun 25 19:13:17 minikube dockerd[1199]: time="2025-06-25T19:13:17.472365801Z" level=info msg="Starting up"
+Jun 25 19:13:17 minikube dockerd[1199]: time="2025-06-25T19:13:17.475553149Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Jun 25 19:13:17 minikube dockerd[1199]: time="2025-06-25T19:13:17.493177255Z" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Jun 25 19:13:17 minikube dockerd[1199]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": Unavailable: connection error: desc = "transport: Error while dialing: dial unix /run/containerd/containerd.sock: connect: connection refused"
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Jun 25 19:13:17 minikube systemd[1]: Failed to start Docker Application Container Engine.
+
+-- /stdout --
+W0625 16:13:18.639850   12952 out.go:270] 
+W0625 16:13:18.642002   12952 out.go:293] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+I0625 16:13:18.643569   12952 out.go:201] 
+
+
+==> Docker <==
+Jun 25 19:13:17 minikube dockerd[766]: time="2025-06-25T19:13:17.767288705Z" level=info msg="containerd successfully booted in 0.112905s"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.783228251Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.805076128Z" level=info msg="Creating a containerd client" address=/var/run/docker/containerd/containerd.sock timeout=1m0s
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.819136650Z" level=info msg="[graphdriver] trying configured driver: overlay2"
+Jun 25 19:13:17 minikube dockerd[758]: time="2025-06-25T19:13:17.830489729Z" level=info msg="Loading containers: start."
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.032327768Z" level=warning msg="ip6tables is enabled, but cannot set up ip6tables chains" error="failed to create NAT chain DOCKER: iptables failed: ip6tables --wait -t nat -N DOCKER: ip6tables v1.8.11 (legacy): can't initialize ip6tables table `nat': Table does not exist (do you need to insmod?)\nPerhaps ip6tables or your kernel needs to be upgraded.\n (exit status 3)"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.132790816Z" level=info msg="Loading containers: done."
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.159761346Z" level=info msg="Docker daemon" commit=6430e49 containerd-snapshotter=false storage-driver=overlay2 version=28.0.4
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.160345666Z" level=info msg="Initializing buildkit"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.198471782Z" level=info msg="Completed buildkit initialization"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.224958626Z" level=info msg="Daemon has completed initialization"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.225263605Z" level=info msg="API listen on /var/run/docker.sock"
+Jun 25 19:13:18 minikube dockerd[758]: time="2025-06-25T19:13:18.225470013Z" level=info msg="API listen on [::]:2376"
+Jun 25 19:13:18 minikube systemd[1]: Started Docker Application Container Engine.
+Jun 25 19:13:12 minikube systemd[1]: cri-docker.service: Scheduled restart job, restart counter is at 3.
+Jun 25 19:13:12 minikube systemd[1]: Stopped CRI Interface for Docker Application Container Engine.
+Jun 25 19:13:12 minikube systemd[1]: cri-docker.service: Start request repeated too quickly.
+Jun 25 19:13:12 minikube systemd[1]: cri-docker.service: Failed with result 'exit-code'.
+Jun 25 19:13:12 minikube systemd[1]: Failed to start CRI Interface for Docker Application Container Engine.
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.357140531Z" level=info msg="Processing signal 'terminated'"
+Jun 25 19:13:16 minikube systemd[1]: Stopping Docker Application Container Engine...
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.359706442Z" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.361011727Z" level=info msg="Daemon shutdown complete"
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.361135563Z" level=info msg="stopping healthcheck following graceful shutdown" module=libcontainerd
+Jun 25 19:13:16 minikube dockerd[758]: time="2025-06-25T19:13:16.361203747Z" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Deactivated successfully.
+Jun 25 19:13:17 minikube systemd[1]: Stopped Docker Application Container Engine.
+Jun 25 19:13:17 minikube systemd[1]: Starting Docker Application Container Engine...
+Jun 25 19:13:17 minikube dockerd[1199]: time="2025-06-25T19:13:17.472365801Z" level=info msg="Starting up"
+Jun 25 19:13:17 minikube dockerd[1199]: time="2025-06-25T19:13:17.475553149Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Jun 25 19:13:17 minikube dockerd[1199]: time="2025-06-25T19:13:17.493177255Z" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Jun 25 19:13:17 minikube dockerd[1199]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": Unavailable: connection error: desc = "transport: Error while dialing: dial unix /run/containerd/containerd.sock: connect: connection refused"
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Jun 25 19:13:17 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+Jun 25 19:13:17 minikube systemd[1]: Stopped Docker Application Container Engine.
+Jun 25 19:13:17 minikube systemd[1]: Starting Docker Application Container Engine...
+Jun 25 19:13:17 minikube dockerd[1224]: time="2025-06-25T19:13:17.908822518Z" level=info msg="Starting up"
+Jun 25 19:13:17 minikube dockerd[1224]: time="2025-06-25T19:13:17.910843661Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Jun 25 19:13:17 minikube dockerd[1224]: time="2025-06-25T19:13:17.929086880Z" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Jun 25 19:13:17 minikube dockerd[1224]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": Unavailable: connection error: desc = "transport: Error while dialing: dial unix /run/containerd/containerd.sock: connect: connection refused"
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Jun 25 19:13:17 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Jun 25 19:13:17 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Jun 25 19:13:18 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+Jun 25 19:13:18 minikube systemd[1]: Stopped Docker Application Container Engine.
+Jun 25 19:13:18 minikube systemd[1]: Starting Docker Application Container Engine...
+Jun 25 19:13:18 minikube dockerd[1247]: time="2025-06-25T19:13:18.143709569Z" level=info msg="Starting up"
+Jun 25 19:13:18 minikube dockerd[1247]: time="2025-06-25T19:13:18.147648090Z" level=info msg="OTEL tracing is not configured, using no-op tracer provider"
+Jun 25 19:13:18 minikube dockerd[1247]: time="2025-06-25T19:13:18.168751610Z" level=info msg="Creating a containerd client" address=/run/containerd/containerd.sock timeout=1m0s
+Jun 25 19:13:18 minikube dockerd[1247]: failed to start daemon: failed to dial "/run/containerd/containerd.sock": Unavailable: connection error: desc = "transport: Error while dialing: dial unix /run/containerd/containerd.sock: connect: connection refused"
+Jun 25 19:13:18 minikube systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+Jun 25 19:13:18 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Jun 25 19:13:18 minikube systemd[1]: Failed to start Docker Application Container Engine.
+Jun 25 19:13:18 minikube systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+Jun 25 19:13:18 minikube systemd[1]: Stopped Docker Application Container Engine.
+Jun 25 19:13:18 minikube systemd[1]: docker.service: Start request repeated too quickly.
+Jun 25 19:13:18 minikube systemd[1]: docker.service: Failed with result 'exit-code'.
+Jun 25 19:13:18 minikube systemd[1]: Failed to start Docker Application Container Engine.
+
+
+==> container status <==
+command /bin/bash -c "sudo `which crictl || echo crictl` ps -a || sudo docker ps -a" failed with error: /bin/bash -c "sudo `which crictl || echo crictl` ps -a || sudo docker ps -a": Process exited with status 1
+stdout:
+
+stderr:
+time="2025-06-25T19:19:18Z" level=fatal msg="validate service connection: validate CRI v1 runtime API for endpoint \"unix:///var/run/cri-dockerd.sock\": rpc error: code = Unavailable desc = connection error: desc = \"transport: Error while dialing: dial unix /var/run/cri-dockerd.sock: connect: connection refused\""
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+
+
+==> describe nodes <==
+command /bin/bash -c "sudo /var/lib/minikube/binaries/v1.33.1/kubectl describe nodes --kubeconfig=/var/lib/minikube/kubeconfig" failed with error: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.33.1/kubectl describe nodes --kubeconfig=/var/lib/minikube/kubeconfig": Process exited with status 1
+stdout:
+
+stderr:
+sudo: /var/lib/minikube/binaries/v1.33.1/kubectl: command not found
+
+
+==> dmesg <==
+[Jun25 19:12] You have booted with nomodeset. This means your GPU drivers are DISABLED
+[  +0.000002] Any video related functionality will be severely degraded, and you may not even be able to suspend the system properly
+[  +0.000002] Unless you actually understand what nomodeset does, you should reboot without enabling it
+[  +0.000012] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[  +0.000039] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[Jun25 19:13] systemd[1]: Invalid DMI field header.
+[  +0.000020] (rpcbind)[226]: rpcbind.service: Referenced but unset environment variable evaluates to an empty string: RPCBIND_OPTIONS
+[  +0.146485] pmd_set_huge: Cannot satisfy [mem 0xf0400000-0xf0600000] with a huge-page mapping due to MTRR override.
+[  +0.328287] NFSD: Using /var/lib/nfs/v4recovery as the NFSv4 state recovery directory
+[  +0.000010] NFSD: unable to find recovery directory /var/lib/nfs/v4recovery
+[  +0.000002] NFSD: Unable to initialize client recovery tracking! (-2)
+[  +0.010605] kauditd_printk_skb: 96 callbacks suppressed
+[ +18.322702] kauditd_printk_skb: 16 callbacks suppressed
+
+
+==> kernel <==
+ 19:19:18 up 6 min,  0 users,  load average: 0.00, 0.23, 0.17
+Linux minikube 5.10.207 #1 SMP Thu May 15 23:20:46 UTC 2025 x86_64 GNU/Linux
+PRETTY_NAME="Buildroot 2025.02"
+
+
+==> kubelet <==
+-- No entries --
+
