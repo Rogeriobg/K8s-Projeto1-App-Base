@@ -1,6 +1,35 @@
-# Projeto Dio.io Deploy de uma Aplicação 
-
+# 📌 Descrição do Projeto
+Este projeto demonstra o uso de Kubernetes (K8s) com Minikube para orquestração de containers, criando um ambiente completo com serviços backend em PHP e um banco de dados MySQL.
 ## Professor Denilson Bonatti
+
+## ✅ Tecnologias utilizadas:
+Kubernetes (Minikube) → Para criação e gerenciamento de pods, deployments e serviços.
+
+MySQL → Banco de dados persistente para armazenar as mensagens enviadas via formulário.
+
+PHP (backend) → API simples que recebe os dados do frontend e grava no banco.
+
+NodePort e ClusterIP Services → Permitem comunicação entre os pods e também acesso externo ao backend.
+
+## ✅ Estrutura do Projeto:
+1 Pod MySQL com armazenamento persistente via PersistentVolumeClaim (PVC).
+
+2 réplicas do Pod PHP garantindo alta disponibilidade para o backend.
+
+Services:
+
+mysql-connection (ClusterIP) → Comunicação interna entre o PHP e o MySQL.
+
+php (NodePort) → Permite acessar a aplicação PHP externamente via porta do Minikube.
+
+## ✅ Fluxo da Aplicação:
+O usuário preenche um formulário frontend.
+
+Os dados são enviados via HTTP (NodePort) para o backend PHP rodando no cluster.
+
+O backend PHP se conecta ao MySQL (via Service interno ClusterIP) e grava os dados.
+
+Foi realizada a consulta via terminal no pod do MySQL para validar que os dados foram persistidos com sucesso.
 
 ## Acessando o banco de dados dentro do pod no minikube 
  kubectl exec -it mysql-69fcbbbf8c-7lm8c -- bash
