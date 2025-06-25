@@ -1,5 +1,7 @@
 # Projeto Dio.io Deploy de uma Aplicação 
 
+## Professor Denilson Bonatti
+
 ## Acessando o banco de dados dentro do pod no minikube 
  kubectl exec -it mysql-69fcbbbf8c-7lm8c -- bash
 
